@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/images/imagem-de-construcao.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+header {
+    background-color: rgba(0, 51, 102, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px;
+    position: relative;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calculator form {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.calculator select, .calculator input[type="number"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.calculator div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculator div label {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.calculator input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006994;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #8b0000;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.quadro-resultado {
+    border: 2px solid #006994;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    /* Centralização */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+.quadro-resultado h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #006994;
+    font-weight: bold;
+    border-bottom: 2px solid #006994;
+    padding-bottom: 10px;
+}
+
+.quadro-resultado table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.quadro-resultado th, .quadro-resultado td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color: #006994;
+}
+
+.quadro-resultado th {
+    background-color: #006994;
+    color: white;
+}
+
+.alerta {
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.alerta .valor-minimo {
+    font-weight: bold;
+    color: #f44336;
+}
+
+.mensagem-erro {
+    color: #f44336;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.calculator label, .calculator select, .calculator input[type="number"], .calculator input[type="checkbox"] {
+    font-family: 'Verdana', sans-serif;
+}
+
+#botaoWhatsApp:hover {
+    background-color: #128C7E;
+  }  
+
+#fot {
+    color: white;
+}

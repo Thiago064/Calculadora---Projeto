@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construtora XYZ - Calculadora de Projetos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/funçao.js" defer></script>
+</head>
+<body onload="mostrarOcultarOpcoes()">
+    <header>
+        <h1>Construtora XYZ</h1>
+        <p>Seu parceiro em construção de sonhos. Contato: (31) 1234-5678</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Bem-vindo à nossa Calculadora de Projetos</h2>
+            <p>Preencha os detalhes do seu projeto abaixo para receber um orçamento personalizado.</p>
+        </section>
+
+        <section class="calculator">
+            <form onsubmit="event.preventDefault(); obterValoresFormulario(); mudarCorBotao();">
+                <label for="tipoConstrucao">Tipo de Construção:</label>
+                <select id="tipoConstrucao" onchange="mostrarOcultarOpcoes()">
+                    <option value="">Selecione o tipo</option>
+                    <option value="casa">Casa</option>
+                    <option value="predio">Prédio</option>
+                    <option value="comercio">Comércio</option>
+                </select>
+
+                <label for="metros">Metros:</label>
+                <input type="number" id="metros" required>
+
+                <div id="opcoesItens">
+                    <label><input type="checkbox" name="item" value="estrutural">Estrutural</label>
+                    <label><input type="checkbox" name="item" value="eletrico">Elétrico</label>
+                    <label><input type="checkbox" name="item" value="hidrossanitario">Hidrossanitário</label>
+                    <label><input type="checkbox" name="item" value="arCondicionado">Ar Condicionado</label>
+                    <label><input type="checkbox" name="item" value="cabeamento">Cabeamento</label>
+                    <label id="opcaoSPDA"><input type="checkbox" name="item" value="spda">SPDA</label>
+                    <label id="opcaoGas"><input type="checkbox" name="item" value="gas">Gás</label>
+                    <label id="opcaoIncendio"><input type="checkbox" name="item" value="incendio">Incêndio</label>
+                </div>
+
+                <button type="submit" id="submitBtn">Calcular</button>
+
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="fot">© 2025 Construtora XYZ. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
